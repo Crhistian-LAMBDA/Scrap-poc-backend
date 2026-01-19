@@ -31,12 +31,25 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Django apps (base)
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third-party apps
+    'rest_framework',  # DRF: habilita APIs con Django REST Framework
+
+    # Local apps (POC)
+    'applications.core',       # App base del proyecto (utilidades/constantes más adelante)
+    'applications.sources',    # Fuentes predefinidas (posts/users/bitcoin/quotes/books)
+    'applications.scrapers',   # Ejecución de scrapers (API/HTML)
+    'applications.storage',    # Persistencia/normalización (más adelante)
+    'applications.metadata',   # Registro de ejecuciones (status, fechas, error)
+    'applications.analysis',   # Análisis con pandas
+    'applications.exports',    # Exportación (Excel/PDF)
 ]
 
 MIDDLEWARE = [
