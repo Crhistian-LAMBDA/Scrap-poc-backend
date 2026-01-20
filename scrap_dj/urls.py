@@ -17,6 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from applications.core.views import health, scrape # Healthcheck DRF endpoint
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('api/health/', health), # DRF health check (verifica que DRF funciona)
+    path('api/scrape/', scrape), # DRF scraping endpoint
 ]
