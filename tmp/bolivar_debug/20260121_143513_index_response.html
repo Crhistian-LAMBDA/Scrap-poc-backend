@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            <meta name="apple-mobile-web-app-capable" content="yes" /><link type="text/css" rel="stylesheet" href="/indemnizaciones-web/javax.faces.resource/theme.css.xhtml?ln=primefaces-paradise-green" /><link type="text/css" rel="stylesheet" href="/indemnizaciones-web/javax.faces.resource/fa/font-awesome.css.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1" /><link type="text/css" rel="stylesheet" href="/indemnizaciones-web/javax.faces.resource/components.css.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1" /><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1"></script><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1"></script><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/core.js.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1"></script><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/components.js.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1"></script><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/keyfilter/keyfilter.js.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1"></script><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/inputnumber/inputnumber.js.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1"></script><link type="text/css" rel="stylesheet" href="/indemnizaciones-web/javax.faces.resource/inputnumber/inputnumber.css.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1" /><link type="text/css" rel="stylesheet" href="/indemnizaciones-web/javax.faces.resource/fileupload/fileupload.css.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1" /><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/fileupload/fileupload.js.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1"></script><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/idlemonitor/idlemonitor.js.xhtml?ln=primefaces&amp;v=6.1&amp;v=6.1"></script><link type="text/css" rel="stylesheet" href="/indemnizaciones-web/javax.faces.resource/css/nanoscroller.css.xhtml?ln=paradise-layout" /><link type="text/css" rel="stylesheet" href="/indemnizaciones-web/javax.faces.resource/css/animate.css.xhtml?ln=paradise-layout" /><link type="text/css" rel="stylesheet" href="/indemnizaciones-web/javax.faces.resource/css/layout-green.css.xhtml?ln=paradise-layout" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='es';}</script>
+        <title>Indemnizaciones Web</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../../resources/sentinel-layout/images/favicon.ico" /><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/js/nanoscroller.js.xhtml?ln=paradise-layout"></script><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/js/layout.js.xhtml?ln=paradise-layout"></script><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/js/calendar_es.js.xhtml?ln=paradise-layout"></script><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/js/validacion.js.xhtml?ln=paradise-layout"></script><script type="text/javascript" src="/indemnizaciones-web/javax.faces.resource/general.js.xhtml?ln=js"></script>
+        <style type="text/css">
+            .main-content {
+                padding: 0;
+            }
+            .ui-growl {
+                z-index: 9999 !important;
+            }
+        </style></head><body>
+        <div class="layout-wrapper layout-menu-static"><span id="divTopBarPpal" class="topbar"><a href="/indemnizaciones-web/pages/index.xhtml" class="topbar-logo"><img src="/indemnizaciones-web/javax.faces.resource/images/logo_bolivar.png.xhtml?ln=sentinel-layout" class="Fleft" /></a>
+
+        <a href="#" id="menu-button">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <a href="#" id="user-display">
+            <span class="username">Acrecer Ltda</span><img id="j_idt18" src="/indemnizaciones-web/javax.faces.resource/images/avatar.png.xhtml?ln=paradise-layout" alt="" style="border: 0px;" />
+            <i class="fa fa-angle-down"></i>
+        </a>
+        
+        <div id="noti" style="float: right"><a href="/indemnizaciones-web/pages/documentoNotificacion/anexarDocumento.xhtml">
+                <i class="topbar-icon fa fa-fw fa-bell-o animated swing"></i>
+                <span class="topbar-badge animated rubberBand">6</span></a>
+        </div>
+        
+        <ul id="topbar-menu" class="fadeInDown animated" style="text-align: left; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);">
+            <li>
+                <form id="form1" action="/indemnizaciones-web/logoutServlet?logoutParam=1" method="post">
+                    <a href="#" onclick="parentNode.submit();">
+                        <i class="fa fa-fw fa-sign-out" style="color: #008c4d;"></i>
+                        <span class="topbar-item-name">Cerrar Sesión</span>
+                    </a>
+                </form>
+            </li>
+            <br />
+        </ul></span>
+
+            <div class="layout-main">
+
+    <div class="layout-menu-wrapper">
+        <div class="nano">
+            <div class="nano-content sidebar-scroll-content">
+                <div class="layout-menu-container">
+<form id="menuform" name="menuform" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="menuform" value="menuform" />
+<ul id="menuform:j_idt25" class="layout-menu"><li id="menuform:j_idt25_0" role="menuitem"><a href="/indemnizaciones-web/pages/index.xhtml"><span>Home</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Home</div></div></li><li id="menuform:j_idt25_1" role="menuitem"><a href="/indemnizaciones-web/pages/siniestro/siniestroMasivo.xhtml"><span>Registro Masivo</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Registro Masivo</div></div></li><li id="menuform:j_idt25_2" role="menuitem"><a href="/indemnizaciones-web/pages/documentoNotificacion/anexarDocumento.xhtml"><span>Anexar Documentos</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Anexar Documentos</div></div></li><li id="menuform:j_idt25_3" role="menuitem"><a href="/indemnizaciones-web/pages/alerta/alerta.xhtml"><span>Reversar Transaccion</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Reversar Transaccion</div></div></li><li id="menuform:j_idt25_4" role="menuitem"><a href="/indemnizaciones-web/pages/informes/SiniestroIngresado.xhtml"><span>Siniestros Ingresados</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Siniestros Ingresados</div></div></li><li id="menuform:j_idt25_5" role="menuitem"><a href="/indemnizaciones-web/pages/cargueMasivo/cargueMasivo.xhtml"><span>Cargue Masivo Novedades</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Cargue Masivo Novedades</div></div></li><li id="menuform:j_idt25_6" role="menuitem"><a href="/indemnizaciones-web/pages/pin/pin.xhtml"><span>Generacion Pin De Pago</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Generacion Pin De Pago</div></div></li><li id="menuform:j_idt25_7" role="menuitem"><a href="/indemnizaciones-web/pages/informes/ReporteNovedades.xhtml"><span>Reportes Novedades</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Reportes Novedades</div></div></li><li id="menuform:j_idt25_8" role="menuitem"><a href="/indemnizaciones-web/pages/informes/ListadosFacturacion.xhtml"><span>Listados De Facturacion</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Listados De Facturacion</div></div></li></ul><script id="menuform:j_idt25_s" type="text/javascript">PrimeFaces.cw("Paradise","widget_menuform_j_idt25",{id:"menuform:j_idt25"});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <div class="layout-content"><div id="j_idt28" class="ui-panel ui-widget ui-widget-content ui-corner-all ui-panelgrid-blank ui-panel-inicio" data-widget="widget_j_idt28"><div id="j_idt28_content" class="ui-panel-content ui-widget-content">
+<form id="FormIndex" name="FormIndex" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FormIndex" value="FormIndex" />
+<span id="msgs"></span><script id="msgs_s" type="text/javascript">$(function(){PrimeFaces.cw('Growl','widget_msgs',{id:'msgs',sticky:true,life:6000,escape:true,msgs:[]});});</script>
+
+                <div class="ui-g">
+                    <div class="ui-g-12 ui-md-6 ui-g-nopad">
+                        <div class="ui-g-12">
+                            <h2>BUSCAR SOLICITUD</h2>
+                        </div>
+
+                        <div class="ui-g-12 ui-g-nopad">
+                            <div class="ui-g">
+                                <div class="ui-g-12 ui-md-5"><label id="j_idt30" class="ui-outputlabel ui-widget">Ingrese el número de solicitud</label>
+                                </div>
+                                <div class="ui-g-12 ui-md-5"><script id="j_idt32_s" type="text/javascript">$(function(){PrimeFaces.cw("KeyFilter","widget_j_idt32",{id:"j_idt32",target:"busqueda",regEx:/[0-9]/});});</script><input id="busqueda" name="busqueda" type="text" value="" maxlength="10" aria-required="true" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><script id="busqueda_s" type="text/javascript">PrimeFaces.cw("InputText","widget_busqueda",{id:"busqueda"});</script>
+                                </div>
+                                <div class="ui-g-12 ui-md-2"><button id="j_idt34" name="j_idt34" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.onPost();" type="submit"><span class="ui-button-text ui-c">BUSCAR</span></button><script id="j_idt34_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt34",{id:"j_idt34"});</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-g-12 ui-md-5"><a id="j_idt36" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt36&quot;,p:&quot;j_idt36&quot;});return false;"><img src="../resources/images/ayuda_linea.png" height="200" width="360" /></a>
+                    </div>
+                </div><table id="informacion" style="width: 100%;">
+<tbody>
+<tr><td></td></tr></tbody>
+</table>
+<div id="DetalleSiniestroEC" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" style="position: absolute"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="DetalleSiniestroEC_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"></div></div><script id="DetalleSiniestroEC_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","widDetalleEC",{id:"DetalleSiniestroEC",resizable:false,modal:true,dynamic:true,position:"center center",closeOnEscape:true});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form></div></div><script id="j_idt28_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt28",{id:"j_idt28"});</script>
+        
+     <script type="text/javascript">
+        (function(w) {
+        var s = document.createElement('script');
+        s.src = 'https://survey.survicate.com/workspaces/da74c45ad6d55fc015b3f56b49ad1e0f/web_surveys.js';
+        s.async = true;
+        var e = document.getElementsByTagName('script')[0];
+        e.parentNode.insertBefore(s, e);
+        })(window);
+    </script>
+<form id="FormAmparoIntegral" name="FormAmparoIntegral" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FormAmparoIntegral" value="FormAmparoIntegral" />
+<div id="FormAmparoIntegral:amparoIntegralDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" style="position: absolute"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="FormAmparoIntegral:amparoIntegralDialog_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">
+        
+        <h2 style="text-align: center; margin-bottom: 15px;">Registrar Amparo Integral</h2><table class="ui-panelgrid-blank">
+<tbody>
+<tr>
+<td><span id="FormAmparoIntegral:valObligatoriosTabla"></span><script id="FormAmparoIntegral:valObligatoriosTabla_s" type="text/javascript">$(function(){PrimeFaces.cw('Growl','widget_FormAmparoIntegral_valObligatoriosTabla',{id:'FormAmparoIntegral:valObligatoriosTabla',sticky:true,life:6000,escape:true,msgs:[]});});</script></td>
+</tr>
+<tr>
+<td><label>Fecha de Mora: </label><span id="FormAmparoIntegral:amparo_fechmora" class="ui-calendar"><input id="FormAmparoIntegral:amparo_fechmora_input" name="FormAmparoIntegral:amparo_fechmora_input" type="text" value="21/01/26" class="ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-disabled" disabled="disabled" /></span><script id="FormAmparoIntegral:amparo_fechmora_s" type="text/javascript">$(function(){PrimeFaces.cw("Calendar","widget_FormAmparoIntegral_amparo_fechmora",{id:"FormAmparoIntegral:amparo_fechmora",popup:true,locale:"es",dateFormat:"d/mm/y",defaultDate:"21/01/26",disabled:true});});</script></td>
+</tr>
+<tr>
+<td><label>Valor Asegurado: </label><span id="FormAmparoIntegral:j_idt199" class="ui-inputnumber ui-widget"><input id="FormAmparoIntegral:j_idt199_input" name="FormAmparoIntegral:j_idt199_input" type="text" value="" disabled="disabled" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled" /><input id="FormAmparoIntegral:j_idt199_hinput" name="FormAmparoIntegral:j_idt199_hinput" type="hidden" autocomplete="off" /></span><script id="FormAmparoIntegral:j_idt199_s" type="text/javascript">$(function(){PrimeFaces.cw("InputNumber","widget_FormAmparoIntegral_j_idt199",{id:"FormAmparoIntegral:j_idt199",disabled:true,valueToRender:"",pluginOptions:{aDec:",",aSep:".",aSign:"$ ",mDec:"0",wEmpty:"empty",aPad:true}});});</script></td>
+</tr>
+</tbody>
+</table>
+<div id="FormAmparoIntegral:resultadosConceptos" class="ui-datatable ui-widget"><div class="ui-datatable-tablewrapper"><table role="grid" style="table-layout: auto;"><thead id="FormAmparoIntegral:resultadosConceptos_head"><tr role="row"><th id="FormAmparoIntegral:resultadosConceptos:j_idt200" class="ui-state-default" role="columnheader" aria-label="Concepto" scope="col"><span class="ui-column-title">Concepto</span></th><th id="FormAmparoIntegral:resultadosConceptos:j_idt202" class="ui-state-default" role="columnheader" aria-label="Valor a Reclamar" scope="col"><span class="ui-column-title">Valor a Reclamar</span></th><th id="FormAmparoIntegral:resultadosConceptos:j_idt203" class="ui-state-default" role="columnheader" aria-label="Fecha Inicial" scope="col"><span class="ui-column-title">Fecha Inicial</span></th><th id="FormAmparoIntegral:resultadosConceptos:j_idt204" class="ui-state-default" role="columnheader" aria-label="Fecha Final" scope="col"><span class="ui-column-title">Fecha Final</span></th></tr></thead><tbody id="FormAmparoIntegral:resultadosConceptos_data" class="ui-datatable-data ui-widget-content"><tr class="ui-widget-content ui-datatable-empty-message"><td colspan="4">No se encontraron resultados.</td></tr></tbody></table></div></div><script id="FormAmparoIntegral:resultadosConceptos_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_FormAmparoIntegral_resultadosConceptos",{id:"FormAmparoIntegral:resultadosConceptos",groupColumnIndexes:[]});});</script>
+        <br />
+       
+        <div style="width: auto; block-size: unset; display: flex;"><label style="margin-left: 5px; margin-top: 5px;">Total: </label><span id="FormAmparoIntegral:amparo_totalreportado" class="ui-inputnumber ui-widget"><input id="FormAmparoIntegral:amparo_totalreportado_input" name="FormAmparoIntegral:amparo_totalreportado_input" type="text" value="0" disabled="disabled" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled" /><input id="FormAmparoIntegral:amparo_totalreportado_hinput" name="FormAmparoIntegral:amparo_totalreportado_hinput" type="hidden" autocomplete="off" /></span><script id="FormAmparoIntegral:amparo_totalreportado_s" type="text/javascript">$(function(){PrimeFaces.cw("InputNumber","widget_FormAmparoIntegral_amparo_totalreportado",{id:"FormAmparoIntegral:amparo_totalreportado",disabled:true,valueToRender:"0.000000000000000",pluginOptions:{aDec:",",aSep:".",aSign:"$ ",pSign:"p",mDec:"0",wEmpty:"empty",aPad:true}});});</script>
+            <div style="width: 100%; text-align: right; display: flex; justify-content: flex-end; gap: 10px; align-items: center;">
+                <style>
+                    /* Estilos para unificar el botón de fileUpload con el botón de registrar */
+                    #FormAmparoIntegral\\:btnAdjuntar .ui-fileupload-buttonbar .ui-button {
+                        font-weight: normal !important;
+                        font-size: 15px !important;
+                        padding: 8px 14px !important;
+                        border-radius: 20px !important;
+                        background-color: #008c44 !important;
+                        color: #ffffff !important;
+                        border: 1px solid transparent !important;
+                        height: auto !important;
+                        min-height: auto !important;
+                    }
+                    #FormAmparoIntegral\\:btnAdjuntar .ui-fileupload-buttonbar .ui-button:hover {
+                        background-color: #008c44 !important;
+                        color: #ffdc5d !important;
+                    }
+                </style><div id="FormAmparoIntegral:btnAdjuntar" class="ui-fileupload ui-widget ui-fileupload-responsive" style="margin-bottom: 10px; font-weight: normal !important;"><div class="ui-fileupload-buttonbar ui-widget-header ui-corner-top"><span class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-fileupload-choose ui-state-disabled" tabindex="-1" role="button" aria-labelledby="FormAmparoIntegral:btnAdjuntar_label"><span class="ui-button-icon-left ui-icon ui-c ui-icon-plusthick"></span><span id="FormAmparoIntegral:btnAdjuntar_label" class="ui-button-text ui-c">Seleccionar Archivos</span></span></div><div class="ui-fileupload-content ui-widget-content ui-corner-bottom"><div class="ui-fileupload-files"><div></div></div></div></div><script id="FormAmparoIntegral:btnAdjuntar_s" type="text/javascript">$(function(){PrimeFaces.cw("FileUpload","widget_FormAmparoIntegral_btnAdjuntar",{id:"FormAmparoIntegral:btnAdjuntar",auto:true,maxFileSize:5242880.0,disabled:true});});</script><button id="FormAmparoIntegral:j_idt208" name="FormAmparoIntegral:j_idt208" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;FormAmparoIntegral:j_idt208&quot;,p:&quot;FormAmparoIntegral&quot;,u:&quot;FormAmparoIntegral:valObligatoriosTabla FormAmparoIntegral:archivosSeleccionados&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Registrar</span></button><script id="FormAmparoIntegral:j_idt208_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FormAmparoIntegral_j_idt208",{id:"FormAmparoIntegral:j_idt208"});</script>
+            </div>
+        </div><span id="FormAmparoIntegral:archivosSeleccionados" style="margin-top: 10px; padding: 10px; background-color: #f8f9fa; border-radius: 4px; border: 1px solid #dee2e6; display: block;"><span style="font-style: italic; color: #6c757d;">Ningún archivo seleccionado</span></span></div></div><script id="FormAmparoIntegral:amparoIntegralDialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","amparoIntegral",{id:"FormAmparoIntegral:amparoIntegralDialog",resizable:false,modal:true,closeOnEscape:true});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form>
+<form id="FormDanios" name="FormDanios" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FormDanios" value="FormDanios" />
+<span id="FormDanios:validar"></span><script id="FormDanios:validar_s" type="text/javascript">$(function(){PrimeFaces.cw('Growl','widget_FormDanios_validar',{id:'FormDanios:validar',sticky:true,life:6000,escape:true,msgs:[]});});</script><div id="FormDanios:danioFaltanteDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="FormDanios:danioFaltanteDialog_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><div id="FormDanios:panelPPAL" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="border:0" data-widget="widget_FormDanios_panelPPAL"><div id="FormDanios:panelPPAL_content" class="ui-panel-content ui-widget-content"><table id="FormDanios:no_amparo_hogar" class="ui-panelgrid-blank" cellpadding="5">
+<tbody>
+<tr>
+<td>
+                        <h2><label>Registrar Daños y Faltantes</label></h2></td>
+</tr>
+<tr>
+<td>				    	
+                        <p><label>La solicitud no tiene amparo de daños y faltantes</label></p></td>
+</tr>
+</tbody>
+</table>
+</div></div><script id="FormDanios:panelPPAL_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FormDanios_panelPPAL",{id:"FormDanios:panelPPAL"});</script></div></div><script id="FormDanios:danioFaltanteDialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","danioFaltante",{id:"FormDanios:danioFaltanteDialog",resizable:false,modal:true,closeOnEscape:true});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:3" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form>
+<form id="FormDesocupacion" name="FormDesocupacion" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FormDesocupacion" value="FormDesocupacion" />
+<div id="FormDesocupacion:j_idt266" class="ui-blockui-content ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><img id="FormDesocupacion:j_idt267" src="/indemnizaciones-web/javax.faces.resource/images/ajax-loader.gif.xhtml" alt="" /></div><script id="FormDesocupacion:j_idt266_s" type="text/javascript">$(function(){PrimeFaces.cw("BlockUI","widget_FormDesocupacion_j_idt266",{id:"FormDesocupacion:j_idt266",block:"FormDesocupacion:validar",triggers:"FormDesocupacion:desocuparBtn"});});</script><div id="FormDesocupacion:desocupacionDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="FormDesocupacion:desocupacionDialog_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">		
+
+
+        <div style="text-align: center;">
+            <h2><label>Registrar Desocupación</label></h2>  
+        </div><table id="FormDesocupacion:validar" cellspacing="15" width="450">
+<tbody>
+<tr>
+<td>
+                <div style="text-align: center;"><label for="FormDesocupacion:desocupacion_fecDes">Fecha de desocupación:  </label><span id="FormDesocupacion:desocupacion_fecDes" class="ui-calendar"><input id="FormDesocupacion:desocupacion_fecDes_input" name="FormDesocupacion:desocupacion_fecDes_input" type="text" aria-required="true" class="ui-inputfield ui-widget ui-state-default ui-corner-all" /></span><script id="FormDesocupacion:desocupacion_fecDes_s" type="text/javascript">$(function(){PrimeFaces.cw("Calendar","widget_FormDesocupacion_desocupacion_fecDes",{id:"FormDesocupacion:desocupacion_fecDes",popup:true,locale:"es",dateFormat:"dd/mm/yy",mask:"99/99/9999"});});</script>	
+                </div></td>
+</tr>
+<tr>
+<td>
+                <div style="text-align: right;"><button id="FormDesocupacion:j_idt280" name="FormDesocupacion:j_idt280" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.bcn(this,event,[function(event){PrimeFaces.ab({s:&quot;FormDesocupacion:j_idt280&quot;,e:&quot;click&quot;,p:&quot;FormDesocupacion:j_idt280&quot;,u:&quot;FormDesocupacion:validar&quot;,rv:true});},function(event){PrimeFaces.ab({s:&quot;FormDesocupacion:j_idt280&quot;,p:&quot;FormDesocupacion:j_idt280&quot;});return false;}]);" type="submit"><span class="ui-button-text ui-c">CANCELAR</span></button><script id="FormDesocupacion:j_idt280_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FormDesocupacion_j_idt280",{id:"FormDesocupacion:j_idt280",behaviors:{click:function(ext,event) {PrimeFaces.ab({s:"FormDesocupacion:j_idt280",e:"click",p:"FormDesocupacion:j_idt280",u:"FormDesocupacion:validar",rv:true},ext);}}});</script><button id="FormDesocupacion:btnRegistrar" name="FormDesocupacion:btnRegistrar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;FormDesocupacion:btnRegistrar&quot;});return false;" type="submit"><span class="ui-button-text ui-c">REGISTRAR</span></button><script id="FormDesocupacion:btnRegistrar_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FormDesocupacion_btnRegistrar",{id:"FormDesocupacion:btnRegistrar"});</script>
+                </div></td>
+</tr>
+</tbody>
+</table>
+<div id="FormDesocupacion:confirma" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="FormDesocupacion:confirma_title" class="ui-dialog-title">Confirmación</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">
+
+            <br>	</br>¿Está seguro de realizar la desocupación?<hr id="FormDesocupacion:j_idt291" class="ui-separator ui-state-default ui-corner-all" />	
+            <br>	</br><button id="FormDesocupacion:j_idt293" name="FormDesocupacion:j_idt293" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PF('dataChangeDlg').hide()" type="button"><span class="ui-button-text ui-c">No</span></button><script id="FormDesocupacion:j_idt293_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FormDesocupacion_j_idt293",{id:"FormDesocupacion:j_idt293"});</script><button id="FormDesocupacion:desocuparBtn" name="FormDesocupacion:desocuparBtn" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;FormDesocupacion:desocuparBtn&quot;,e:&quot;click&quot;,p:&quot;FormDesocupacion:desocuparBtn&quot;});" type="button"><span class="ui-button-text ui-c">Si</span></button><script id="FormDesocupacion:desocuparBtn_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FormDesocupacion_desocuparBtn",{id:"FormDesocupacion:desocuparBtn",behaviors:{click:function(ext,event) {PrimeFaces.ab({s:"FormDesocupacion:desocuparBtn",e:"click",p:"FormDesocupacion:desocuparBtn"},ext);}}});</script></div></div><script id="FormDesocupacion:confirma_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","dataChangeDlg",{id:"FormDesocupacion:confirma",behaviors:{close:function(ext,event) {PrimeFaces.ab({s:"FormDesocupacion:confirma",e:"close",p:"FormDesocupacion:confirma"},ext);}}});});</script></div></div><script id="FormDesocupacion:desocupacionDialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","desocupacion",{id:"FormDesocupacion:desocupacionDialog",resizable:false,modal:true,closeOnEscape:true,focus:"FormDesocupacion:btnRegistrar"});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:4" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form>
+<form id="formularioDesistimiento" name="formularioDesistimiento" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formularioDesistimiento" value="formularioDesistimiento" />
+<span id="formularioDesistimiento:msgs"></span><script id="formularioDesistimiento:msgs_s" type="text/javascript">$(function(){PrimeFaces.cw('Growl','widget_formularioDesistimiento_msgs',{id:'formularioDesistimiento:msgs',sticky:false,life:6000,escape:true,msgs:[]});});</script><div id="formularioDesistimiento:desistimientoDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="formularioDesistimiento:desistimientoDialog_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">
+
+        <div class="ui-g-12 ui-g-nopad">
+
+            <div style="text-align: center;">
+                <h2>Registrar Desistimiento </h2>
+            </div><table id="formularioDesistimiento:no_reporte_siniestro" class="ui-panelgrid ui-widget ui-panelgrid-blank" role="grid"><tbody><label for="formularioDesistimiento:fechaDesistimiento"></label></tbody></table>
+        </div></div></div><script id="formularioDesistimiento:desistimientoDialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","desistimiento",{id:"formularioDesistimiento:desistimientoDialog",resizable:false,modal:true,closeOnEscape:true});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:5" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form>
+<form id="formularioAumento" name="formularioAumento" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formularioAumento" value="formularioAumento" />
+<span id="formularioAumento:msgs"></span><script id="formularioAumento:msgs_s" type="text/javascript">$(function(){PrimeFaces.cw('Growl','widget_formularioAumento_msgs',{id:'formularioAumento:msgs',sticky:false,life:6000,escape:true,msgs:[]});});</script><div id="formularioAumento:aumentoDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="formularioAumento:aumentoDialog_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">
+
+        <div class="ui-g-12 ui-g-nopad">
+            <div style="text-align: center;">
+                <h2>Registrar Aumento</h2>
+            </div><table id="formularioAumento:reporte_siniestro" class="ui-panelgrid ui-widget ui-panelgrid-blank" role="grid"><tbody><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell"><label id="formularioAumento:j_idt321" class="ui-outputlabel ui-widget" for="formularioAumento:fecha">Periodo en el que se realiza el aumento</label></td><td role="gridcell" class="ui-panelgrid-cell"><label id="formularioAumento:fecha" class="ui-outputlabel ui-widget"></label></td></tr><tr class="ui-widget-content ui-panelgrid-odd" role="row"><td role="gridcell" class="ui-panelgrid-cell"><label id="formularioAumento:j_idt325" class="ui-outputlabel ui-widget" for="formularioAumento:canon">Canon de arrendamiento actual</label></td><td role="gridcell" class="ui-panelgrid-cell"><span id="formularioAumento:canon">$ 0</span></td></tr><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell"><label id="formularioAumento:j_idt329" class="ui-outputlabel ui-widget" for="formularioAumento:admin">Valor de administración actual</label></td><td role="gridcell" class="ui-panelgrid-cell"><span id="formularioAumento:admin">$ 0</span></td></tr><tr class="ui-widget-content ui-panelgrid-odd" role="row"><td role="gridcell" class="ui-panelgrid-cell"><label id="formularioAumento:j_idt333" class="ui-outputlabel ui-widget" for="formularioAumento:canon_nuevo_input">Canon de arrendamiento a aumentar<span class="ui-outputlabel-rfi">*</span></label></td><td role="gridcell" class="ui-panelgrid-cell"><span id="formularioAumento:canon_nuevo" class="ui-inputnumber ui-widget"><input id="formularioAumento:canon_nuevo_input" name="formularioAumento:canon_nuevo_input" type="text" value="" onkeyup="PrimeFaces.ab({s:&quot;formularioAumento:canon_nuevo&quot;,e:&quot;keyup&quot;,p:&quot;formularioAumento:canon_nuevo&quot;,u:&quot;formularioAumento:cp_nuevo&quot;,g:false});" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><input id="formularioAumento:canon_nuevo_hinput" name="formularioAumento:canon_nuevo_hinput" type="hidden" autocomplete="off" /></span><script id="formularioAumento:canon_nuevo_s" type="text/javascript">$(function(){PrimeFaces.cw("InputNumber","widget_formularioAumento_canon_nuevo",{id:"formularioAumento:canon_nuevo",disabled:false,valueToRender:"",pluginOptions:{aDec:",",aSep:".",aSign:"$ ",vMin:"0",vMax:"999999999999999",wEmpty:"empty",aPad:true}});});</script><div id="formularioAumento:tool_canon_nuevo" class="ui-tooltip ui-widget ui-tooltip-right"><div class="ui-tooltip-arrow"></div><div class="ui-tooltip-text ui-shadow ui-corner-all">Ingrese el nuevo valor de canon de arrendamiento.</div></div><script id="formularioAumento:tool_canon_nuevo_s" type="text/javascript">$(function(){PrimeFaces.cw("Tooltip","widget_formularioAumento_tool_canon_nuevo",{id:"formularioAumento:tool_canon_nuevo",showEffect:"fade",hideEffect:"fade",target:"formularioAumento:canon_nuevo"});});</script></td></tr><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell" colspan="2"><div id="formularioAumento:j_idt337" aria-live="polite" class="ui-message"></div></td></tr><tr class="ui-widget-content ui-panelgrid-odd" role="row"><td role="gridcell" class="ui-panelgrid-cell"><label id="formularioAumento:j_idt340" class="ui-outputlabel ui-widget" for="formularioAumento:admin_nuevo_input">Valor de administración a aumentar<span class="ui-outputlabel-rfi">*</span></label></td><td role="gridcell" class="ui-panelgrid-cell"><span id="formularioAumento:admin_nuevo" class="ui-inputnumber ui-widget"><input id="formularioAumento:admin_nuevo_input" name="formularioAumento:admin_nuevo_input" type="text" value="" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><input id="formularioAumento:admin_nuevo_hinput" name="formularioAumento:admin_nuevo_hinput" type="hidden" autocomplete="off" /></span><script id="formularioAumento:admin_nuevo_s" type="text/javascript">$(function(){PrimeFaces.cw("InputNumber","widget_formularioAumento_admin_nuevo",{id:"formularioAumento:admin_nuevo",disabled:false,valueToRender:"",pluginOptions:{aDec:",",aSep:".",aSign:"$ ",vMin:"0",vMax:"999999999999999",wEmpty:"empty",aPad:true}});});</script><div id="formularioAumento:tool_admin_nuevo" class="ui-tooltip ui-widget ui-tooltip-right"><div class="ui-tooltip-arrow"></div><div class="ui-tooltip-text ui-shadow ui-corner-all">Ingrese el nuevo valor de administración</div></div><script id="formularioAumento:tool_admin_nuevo_s" type="text/javascript">$(function(){PrimeFaces.cw("Tooltip","widget_formularioAumento_tool_admin_nuevo",{id:"formularioAumento:tool_admin_nuevo",showEffect:"fade",hideEffect:"fade",target:"formularioAumento:admin_nuevo"});});</script></td></tr><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell" colspan="2"><div id="formularioAumento:j_idt344" aria-live="polite" class="ui-message"></div></td></tr><tr class="ui-widget-content ui-panelgrid-odd" role="row"><td role="gridcell" class="ui-panelgrid-cell" colspan="10"><table id="formularioAumento:panel_comercial" class="ui-panelgrid ui-widget ui-panelgrid-blank" role="grid"><tbody></tbody></table></td></tr><table id="formularioAumento:panelCP" class="ui-panelgrid ui-widget ui-panelgrid-blank" role="grid"><tbody></tbody></table><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell">
+                        <b></b></td></tr></tbody></table>
+
+            <div class="ui-g-12 ui-md-12" align="center"><button id="formularioAumento:j_idt368" name="formularioAumento:j_idt368" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.bcn(this,event,[function(event){PrimeFaces.ab({s:&quot;formularioAumento:j_idt368&quot;,e:&quot;click&quot;,p:&quot;formularioAumento:j_idt368&quot;,u:&quot;FormDanios&quot;,g:false,rv:true});},function(event){PrimeFaces.ab({s:&quot;formularioAumento:j_idt368&quot;,p:&quot;formularioAumento:j_idt368&quot;});return false;}]);" type="submit"><span class="ui-button-text ui-c">CANCELAR</span></button><script id="formularioAumento:j_idt368_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formularioAumento_j_idt368",{id:"formularioAumento:j_idt368",behaviors:{click:function(ext,event) {PrimeFaces.ab({s:"formularioAumento:j_idt368",e:"click",p:"formularioAumento:j_idt368",u:"FormDanios",g:false,rv:true},ext);}}});</script><button id="formularioAumento:j_idt369" name="formularioAumento:j_idt369" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;formularioAumento:j_idt369&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Registrar Aumento</span></button><script id="formularioAumento:j_idt369_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formularioAumento_j_idt369",{id:"formularioAumento:j_idt369"});</script>
+            </div>
+        </div></div></div><script id="formularioAumento:aumentoDialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","aumento",{id:"formularioAumento:aumentoDialog",resizable:false,modal:true,closeOnEscape:true});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:6" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form>
+<form id="FormRetiro" name="FormRetiro" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FormRetiro" value="FormRetiro" />
+<div id="FormRetiro:j_idt371" class="ui-blockui-content ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><img id="FormRetiro:j_idt372" src="/indemnizaciones-web/javax.faces.resource/images/ajax-loader.gif.xhtml" alt="" /></div><script id="FormRetiro:j_idt371_s" type="text/javascript">$(function(){PrimeFaces.cw("BlockUI","widget_FormRetiro_j_idt371",{id:"FormRetiro:j_idt371",block:"FormRetiro:panelAlgo",triggers:"FormRetiro:retirarBtn"});});</script><div id="FormRetiro:retiroDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="FormRetiro:retiroDialog_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><table id="FormRetiro:panelAlgo" cellspacing="15" width="270">
+<tbody>
+<tr>
+<td>
+                    <div style="text-align: center;">
+                        <h2><label>Registrar Retiro</label></h2> 
+                    </div></td>
+</tr>
+<tr>
+<td>
+                <div style="text-align: center;"><label for="FormRetiro:retiro_fechaRetiro">Fecha de retiro:        </label><span id="FormRetiro:retiro_fechaRetiro"></span>	
+                </div></td>
+</tr>
+<tr>
+<td>
+                <div style="text-align: right;"><button id="FormRetiro:j_idt387" name="FormRetiro:j_idt387" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;FormRetiro:j_idt387&quot;});return false;" type="submit"><span class="ui-button-text ui-c">CANCELAR</span></button><script id="FormRetiro:j_idt387_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FormRetiro_j_idt387",{id:"FormRetiro:j_idt387"});</script><button id="FormRetiro:j_idt389" name="FormRetiro:j_idt389" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.bcn(this,event,[function(event){PF('dataChangeDlg').show()},function(event){PrimeFaces.ab({s:&quot;FormRetiro:j_idt389&quot;});return false;}]);" type="submit"><span class="ui-button-text ui-c">RETIRAR</span></button><script id="FormRetiro:j_idt389_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FormRetiro_j_idt389",{id:"FormRetiro:j_idt389"});</script>
+                </div></td>
+</tr>
+</tbody>
+</table>
+<div id="FormRetiro:confirma" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="FormRetiro:confirma_title" class="ui-dialog-title">Confirmación</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">
+            <br /><br />¿Está seguro de realizar el retiro?<hr id="FormRetiro:j_idt393" class="ui-separator ui-state-default ui-corner-all" />	
+            <br /><br /><button id="FormRetiro:j_idt395" name="FormRetiro:j_idt395" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PF('dataChangeDlg').hide()" type="button"><span class="ui-button-text ui-c">NO</span></button><script id="FormRetiro:j_idt395_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FormRetiro_j_idt395",{id:"FormRetiro:j_idt395"});</script><button id="FormRetiro:retirarBtn" name="FormRetiro:retirarBtn" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;FormRetiro:retirarBtn&quot;,e:&quot;click&quot;,p:&quot;FormRetiro:retirarBtn&quot;});" type="button"><span class="ui-button-text ui-c">SI</span></button><script id="FormRetiro:retirarBtn_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FormRetiro_retirarBtn",{id:"FormRetiro:retirarBtn",behaviors:{click:function(ext,event) {PrimeFaces.ab({s:"FormRetiro:retirarBtn",e:"click",p:"FormRetiro:retirarBtn"},ext);}}});</script></div></div><script id="FormRetiro:confirma_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","dataChangeDlg",{id:"FormRetiro:confirma",behaviors:{close:function(ext,event) {PrimeFaces.ab({s:"FormRetiro:confirma",e:"close",p:"FormRetiro:confirma"},ext);}}});});</script></div></div><script id="FormRetiro:retiroDialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","retiro",{id:"FormRetiro:retiroDialog",resizable:false,modal:true,closeOnEscape:true});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:7" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form>
+<form id="FormIngreso" name="FormIngreso" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FormIngreso" value="FormIngreso" />
+<div id="FormIngreso:ingresoDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" style="position: absolute"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="FormIngreso:ingresoDialog_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"></div></div><script id="FormIngreso:ingresoDialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","ingresosP",{id:"FormIngreso:ingresoDialog",resizable:false,modal:true,dynamic:true,position:"top",closeOnEscape:true,focus:"FormIngreso:canon_arr"});});</script>
+    <script>
+        function fridaysDisabled(date)
+        {
+            //var day = date.getDay();
+            //console.log(day);
+            //return [day != 5, '']
+            var day = date.getDate();
+            return [day === 1, ''];
+        }
+    </script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:8" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form>
+<form id="FormIngresoAmparos" name="FormIngresoAmparos" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FormIngresoAmparos" value="FormIngresoAmparos" />
+<div id="FormIngresoAmparos:ingresoAmpDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" style="position: absolute"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="FormIngresoAmparos:ingresoAmpDialog_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"></div></div><script id="FormIngresoAmparos:ingresoAmpDialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","ingresosAmpP",{id:"FormIngresoAmparos:ingresoAmpDialog",resizable:false,modal:true,dynamic:true,position:"top",closeOnEscape:true,focus:"FormIngresoAmparos:canon_arr"});});</script>
+    <script>
+        function fridaysDisabled(date)
+        {
+            //var day = date.getDay();
+            //console.log(day);
+            //return [day != 5, '']
+            var day = date.getDate();
+            return [day === 1, ''];
+        }
+    </script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:9" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form>
+<form id="FormIngresoClausulaPenal" name="FormIngresoClausulaPenal" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FormIngresoClausulaPenal" value="FormIngresoClausulaPenal" />
+<div id="FormIngresoClausulaPenal:ingresoAmpDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" style="position: absolute"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="FormIngresoClausulaPenal:ingresoAmpDialog_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"></div></div><script id="FormIngresoClausulaPenal:ingresoAmpDialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","ingresosClausulaPenal",{id:"FormIngresoClausulaPenal:ingresoAmpDialog",resizable:false,modal:true,dynamic:true,position:"top",closeOnEscape:true,focus:"FormIngresoClausulaPenal:canon_arr"});});</script>
+    <script>
+        function fridaysDisabled(date)
+        {
+            //var day = date.getDay();
+            //console.log(day);
+            //return [day != 5, '']
+            var day = date.getDate();
+            return [day === 1, ''];
+        }
+    </script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:10" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form>
+                </div>
+
+
+    
+
+    <div class="layout-footer clearfix"><img src="/indemnizaciones-web/javax.faces.resource/images/logo_bolivar_fblanco.jpg.xhtml?ln=sentinel-layout" />
+        
+        <div class="layout-footer-right">
+            <p> © 2017 - Seguros Bolívar S.A </p>
+            <p>Indemnizaciones Web Versión 20221121.1700</p>
+            
+        </div>
+    </div>
+            </div>        
+        </div>
+<form id="j_idt628" name="j_idt628" method="post" action="/indemnizaciones-web/pages/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt628" value="j_idt628" />
+<div id="j_idt628:dlgSinSesion" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt628:dlgSinSesion_title" class="ui-dialog-title">Sesión expirada</span></div><div class="ui-dialog-content ui-widget-content">Su sesión actual se ha expirado por tiempo de inactividad en la aplicación.
+                <div style="text-align: center;margin-top: 6%;"><button id="j_idt628:j_idt631" name="j_idt628:j_idt631" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;j_idt628:j_idt631&quot;,p:&quot;j_idt628:j_idt631&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Volver</span></button><script id="j_idt628:j_idt631_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt628_j_idt631",{id:"j_idt628:j_idt631"});</script>
+                </div></div></div><script id="j_idt628:dlgSinSesion_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","sinSesion",{id:"j_idt628:dlgSinSesion",resizable:false,modal:true,width:"500",height:"100",position:"center center"});});</script><script id="j_idt628:j_idt633_s" type="text/javascript">$(function(){PrimeFaces.cw("IdleMonitor","widget_j_idt628_j_idt633",{id:"j_idt628:j_idt633",timeout:1200000,behaviors:{idle:function(ext,event) {PrimeFaces.ab({s:"j_idt628:j_idt633",e:"idle",p:"j_idt628:j_idt633",u:"j_idt628:dlgSinSesion"},ext);}}});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:11" value="8808498455879298234:-2742769070683741986" autocomplete="off" />
+</form><div id="j_idt634"><div id="j_idt634_start" style="display:none">
+                    <div style="width: 100%;height: 100%;position:fixed;bottom: 0%;background-color: rgba(0, 0, 0, 0.2);z-index: 1000000;">
+                        <i class="fa fa-circle-o-notch fa-spin ajax-loader" aria-hidden="true" style="font-size: 100px;margin-left: 50%;margin-top: 18%;"></i>
+                    </div></div><div id="j_idt634_complete" style="display:none"></div></div><script id="j_idt634_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","widget_j_idt634",{id:"j_idt634"});});</script><div id="j_idt640" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt640_title" class="ui-dialog-title">Fin de Sesion</span></div><div class="ui-dialog-content ui-widget-content">La sesion ha expirado, por favor ingrese nuevamente al sistema.</div></div><script id="j_idt640_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","errorSes",{id:"j_idt640",resizable:false,modal:true,width:"500",height:"100"});});</script><div id="j_idt642" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt642_title" class="ui-dialog-title">Error de Red</span></div><div class="ui-dialog-content ui-widget-content">Su equipo perdio la conectividad de red, este mensaje desaparecera cuente reconecte para continuar su operación.</div></div><script id="j_idt642_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","errorRed",{id:"j_idt642",resizable:false,modal:true,width:"500",height:"100"});});</script><div id="j_idt644" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt644_title" class="ui-dialog-title">Incompatibilidad del navegador</span></div><div class="ui-dialog-content ui-widget-content">El navegador web que está usando no es compatible, por favor actualícelo a una versión más reciente.</div></div><script id="j_idt644_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","errorNav",{id:"j_idt644",resizable:false,modal:true,width:"500",height:"100"});});</script> 
+
+        <SCRIPT LANGUAGE="JavaSCRIPT">
+            function GetIEVersion() {
+                var sAgent = window.navigator.userAgent;
+                var Idx = sAgent.indexOf("MSIE");
+
+                // If IE, return version number.
+                if (Idx > 0)
+                    return parseInt(sAgent.substring(Idx + 5, sAgent.indexOf(".", Idx)));
+
+                // If IE 11 then look for Updated user agent string.
+                else if (!!navigator.userAgent.match(/Trident\/7\./))
+                    return 11;
+
+                else
+                    return 0; //It is not IE
+            }
+            function mostrarDialog() {
+                if (GetIEVersion() > 0) {
+                    if (!(GetIEVersion() >= 9)) {
+                        //PF('errorNav').show();
+                        window.location.href = '/indemnizaciones-web/errorNav.xhtml';
+                    } else {
+                        //PF('errorNav').hide();
+                    }
+                }
+            }
+        </SCRIPT>
+        <script>
+            $(document).ready(
+                    function ()
+                    {
+                        mostrarDialog();
+                        window.addEventListener("online", isOnline, false);
+                        window.addEventListener("offline", isOffline, false);
+                    }
+            );
+
+            function onlyNum() {
+                var $this = $('#txt');
+                $this.val($this.val().replace(/\D/g, ''));
+            }
+
+            isOnline = function () {
+                //alert("YA HAY RED YA PUEDE TRABAJAR!!!!");
+                PF('errorRed').hide();
+            };
+            isOffline = function () {
+                //alert("NO HAY RED NO PUEDE HACER NADA!!!!");
+                PF('errorRed').show();
+            };
+
+            function sessionScopedSocketCloseListener(code) {
+                if (code == 1000) {
+                    alert("Session has expired!");
+                    PF('errorSes').show();
+                }
+            }
+
+        </script></body>
+
+</html>

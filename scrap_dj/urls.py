@@ -18,10 +18,14 @@ from django.contrib import admin
 from django.urls import path
 
 from applications.core.views import health, scrape # Healthcheck DRF endpoint
+from applications.scrapers.views import bolivar_radicados, bolivar_radicados_export
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('api/health/', health), # DRF health check (verifica que DRF funciona)
     path('api/scrape/', scrape), # DRF scraping endpoint
+
+    path('api/bolivar/radicados/', bolivar_radicados),
+    path('api/bolivar/radicados/export/', bolivar_radicados_export),
 ]
